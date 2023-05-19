@@ -1,5 +1,7 @@
 # 'Oregon Fail' (working title) - SEIR 0508 Unit 1 JavaScript Project
 
+_[Link to project Trello board](https://trello.com/b/BA185fty/wip-oregon-fail)_
+
 ## Description
 
 A text-based browser game in the style of the _iconic_ Oregon Trail.
