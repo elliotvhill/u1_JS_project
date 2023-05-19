@@ -1,0 +1,61 @@
+body {
+    margin: 0 auto;
+    font-family: 'Orbitron', 'Courier New', sans-serif;
+}
+
+
+header {
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #00D923;
+    background-color: black;
+    padding: 5px 5px;
+}
+
+
+h1 {
+    font-size: 10vmin;
+}
+
+h3 {
+    font-size: 3.3vmin;
+}
+
+button {
+    background-color: #616161;
+    color: #00D923;
+    font-family: 'Orbitron', 'Courier New', sans-serif;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.container {
+    
+}
+
+.game-text {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+p {
+    padding: 2px 2px 2px 6px;
+    letter-spacing: .07rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    .game-text {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
+
+
+
