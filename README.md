@@ -1,4 +1,4 @@
-# SEIR 0508 - Unit 1 JavaScript Project - WIP
+# SEIR 0508 - Unit 1 JavaScript Project - 'Oregon Fail' WIP
 
 ## Description
 
