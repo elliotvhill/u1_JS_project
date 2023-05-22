@@ -1,8 +1,13 @@
 /* ELEMENTS */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Orbitron', 'Courier New', sans-serif;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -40,24 +45,64 @@ p {
     color: white;
 }
 
+textarea {
+    background-color: yellow;
+    /* position: absolute; */
+    left: 0%;
+    right: 10%;
+    top: 80%;
+    bottom: 0%;
+    box-sizing: border-box;
+    width: 90%;
+    height: 100%;
+}
+
+
+
 /* CLASSES */
 
-.container {
-
+.usersubmit {
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+    box-sizing: border-box;
+    padding: .5rem;
 }
 
-.game-window {
+.container {
     display: block;
     margin: 0 auto;
-    width: 600px;
-    height: 400px;
+    margin-top: 10px;
+    width: 60vw;
+    height: 50vh;
     border: 1px solid black;
+    position: relative;
 }
+
+
 
 .game-text {
     background-color: black;
     color: white;
     font-weight: 500;
+    height: 100px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 80%;
+}
+
+.userinput {
+    background-color: black;
+    /* box-sizing: border-box;
+    position: absolute;
+    display: inline-block; */
+    left: 0%;
+    right: 0%;
+    top: 80%;
+    bottom: 0%;
 }
 
 /* ID'S */
@@ -70,9 +115,6 @@ p {
 
 }
 
-#userinput {
-
-}
 
 /* MEDIA QUERIES */
 

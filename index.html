@@ -15,7 +15,6 @@
 
 <body>
 
-    <div class="container">
     <header>
         <div id="header">
             <h1> OREGON FAIL </h1>
@@ -23,16 +22,19 @@
         </div>
     </header>
 
-    <div class="game-text">
-        <p id="prompts"></p>
-    </div>
-    <div class="game-window">
-
-    </div>
-    <div class="game-text" id="userinput">
-        <!-- <p> Here's some more sample text. </p> -->
+    <div class="container">
+        <div class="game-text">
+            <p id="prompts"></p>
         </div>
-    
+
+        <div class="userinput">
+            <label for="user"></label>
+            <textarea id="userfield" name="user" placeholder="Here's some more sample text." rows="4" cols="50"></textarea>
+            <button class="usersubmit">-></button>
+            <p>  </p>
+        </div>
+        
+    </div>
     <button id="start"> START </button>
     
 
@@ -40,7 +42,6 @@
 
 
 
-</div>
 
 
 

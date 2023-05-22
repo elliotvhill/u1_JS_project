@@ -9,11 +9,22 @@ const replayButton = document.querySelector('#replay')
 startButton.addEventListener(('click'), typeWriter)
 
 /* VARIABLES */
+let gamePrompt = `Welcome to Oregon Fail. Select your character below:`;
+const speed = 50;
+let i = 0;
 
 
 
 /* FUNCTIONS */
 
+function typeWriter() {
+    // let text = gamePrompt;
+    if (i < gamePrompt.length) {
+    document.querySelector('#prompts').innerHTML += gamePrompt.charAt(i);
+    i++
+    setTimeout(typeWriter, speed)
+    }
+}
 
 
 /* --------- PSEUDOCODE & WHITEBOARDING ----------- */
@@ -25,17 +36,6 @@ startButton.addEventListener(('click'), typeWriter)
 // Two text boxes: one at top for prompts, second at bottom as user input
 
 // Typewriter prompt text
-const gamePrompt = `This is some sample text.`;
-const speed = 50;
-let i = 0;
-function typeWriter() {
-    // let text = gamePrompt;
-    if (i < gamePrompt.length) {
-    document.querySelector('#prompts').innerHTML += gamePrompt.charAt(i);
-    i++
-    setTimeout(typeWriter, speed)
-    }
-}
 
 // Build out user input field and functionality
     // enter key to submit
