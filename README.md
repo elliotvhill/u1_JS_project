@@ -27,6 +27,3 @@ Pretty straightforward stuff!
 
 ## Credits
 
-* [Graphics & images: Jamie Cross](https://jamiecross.itch.io/8-bit-dungeon-tilesetsprites)
-* Music
-
