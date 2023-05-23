@@ -3,6 +3,7 @@
 /* VARIABLES */
 
 const inventory = { } /* empty to start */
+
 const weapons = {
 	one: `Pistol: powerful, but only has six shots and limited ammo`,
     two: `Hunting knife: obviously helpful for hunting, but not much help should you run into raiders`,
