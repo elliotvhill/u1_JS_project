@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <script defer src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title> Oregon Fail </title>
 </head>
-
 <body>
+    <h1> Oregon Fail </h1>
+    <button id="startGame"> Play game </button>
 
-    <header>
-        <div id="header">
-            <h1> OREGON FAIL </h1>
-            <h3> A text-based adventure. </h3>
-        </div>
-    </header>
 
-    <div class="container">
-        <div class="game-text">
-            <p id="prompts"></p>
-        </div>
 
-        <div class="userinput">
-            <label for="user"></label>
-            <textarea id="userfield" name="user" placeholder="Here's some more sample text." rows="4" cols="50"></textarea>
-            <button class="usersubmit">-></button>
-            <p>  </p>
+<div class="game-window">
+    <div id="game-prompt"></div>
+    <div id="game-buttons">
+        <!-- <button id="btn1"> Option 1 </button> -->
+        <div>
+            <input type="radio" name="option" value="1" class="btn" id="btn1" onclick="passBtnId(id)">
         </div>
-        
+        <!-- <button id="btn2"> Option 2 </button> -->
+        <div>
+            <input type="radio" name="option" value="2" class="btn" id="btn2" onclick="passBtnId(id)">
+        </div>
+        <!-- <button id="btn3"> Option 3 </button> -->
+        <div>
+            <input type="radio" name="option" value="3" class="btn" id="btn3" onclick="passBtnId(id)">
+        </div>
     </div>
-    <button id="start"> START </button>
-    
+</div>
+
+
+
+
 
 
 

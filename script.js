@@ -1,82 +1,122 @@
-/* BUTTONS */
-
-const startButton = document.querySelector('#start')
-const replayButton = document.querySelector('#replay')
-
-// testing button functionality
-// const btnStart = () => console.log('start button clicked')
-// const btnStart = () => typeWriter();
-// startButton.addEventListener(('click'), typeWriter)
-
+console.log(`working`)
 /* VARIABLES */
 
-
-// let gamePrompt;
-
-function gamePrompt(playerAction) {
-    gamePlayPrompts.forEach(element => {
-        
-    })
-}
-
-const gamePlayPrompts = {
-    welcome: `Welcome to Oregon Fail. Select your character below:`,
-    prompt2: `This is your second prompt.`,
-    prompt3: `This is your third prompt.`
-}
-const speed = 50;
-let i = 0;
-
-
-
-
-/* FUNCTIONS */
-initialize();
-function initialize() {
-    // renderStart();
-    startButton.addEventListener(('click'), typeWriter)
-}
-
-
-function renderStart() {
-    const char1blurb = document.createTextNode(`Character 1`);
-    const character1 = document.createElement('button').appendChild(char1blurb);
-}
-
-function typeWriter(text) {
-    let text = gamePrompt;
-    if (i < gamePrompt.length) {
-    document.querySelector('#prompts').innerHTML += gamePrompt.charAt(i);
-    i++
-    setTimeout(typeWriter, speed)
+const inventory = { } /* empty to start */
+const weapons = {
+    one: 'pistol',
+    two: 'bow and arrow',
+    three: 'hunting knife'
+    } /* -> 3 options */
+const supplies = {
+    one: 'flint stone',
+    two: 'canvas tent',
+    three: 'extra blankets'
+    } /* -> 3 options */
+const routes = {
+    one: 'shortcut through the canyon',
+    two: 'long way along the canyon ridge',
+    three: 'follow the smaller branch of the river'
     }
+
+const buttons = ['btn1', 'btn2', 'btn3']
+
+let gamePromptText; /* -> will need to change */
+const routeChoice = [1, 2, 3]
+
+let button1 = document.querySelector('#btn1');
+let button2 = document.querySelector('#btn2');
+let button3 = document.querySelector('#btn3');
+
+// set each buttons' initial value (label) -> characters 1/2/3
+const startButton = document.querySelector('#startGame')
+startButton.addEventListener('click', gameStart)
+
+function gameStart() {
+    button1.innerText = (` Character 1 `);
+    button2.innerText = (` Character 2 `);
+    button3.innerText = (` Character 3 `);
 }
 
 
+// user clicks a button -> log and store ID of clicked button √
+let btnId;
+function passBtnId(id) {
+    let btnId = id;
+    console.log(`${btnId}`)
+    // let chosenBtn = document.querySelector('input:checked')
+    // chosenBtn.innerHTML = `You have chosen option 1.`
+}
 
-/* --------- PSEUDOCODE & WHITEBOARDING ----------- */
+// passBtnId()
 
-// EventListener for Start button click √
+    // clicked button ID then informs next question options
 
-// Render game board -> start 
+    // function to update the buttons' text after each prompt
+    // const updateBtns = btnId.addEventListener('click', () => {
+    //     button1.innerHTML = `Button 1 prompt 2`;
+    //     button2.innerHTML = `Button 2 prompt 2`;
+    //     button3.innerHTML = `Button 3 prompt 2`
+    // })
 
-    // start with choice of 3 characters 
-        // button one
-        // button two
-        // button three
+    // secondPrompt()
+    // function secondPrompt(btnId) {
+    //     if (btnId === 'btn1') {
+    //         console.log(`You have chosen option 1.`)
+    //     }
+    //     else if (btnId === 'btn2') {
+    //         console.log(`You have chosen option 2.`)
+    //     }
+    // }
 
-    // gameplay with text prompts 
-
-// Two text boxes: one at top for prompts, second at bottom as user input 
-
-// Typewriter prompt text √
-
-// Build out user input field and functionality 
-    // enter key to submit 
-
-// Need a 'lives' counter to track attempts 
-    // If Lives reaches 0, game is over 
-
-// Button to reset & replay 
+// function & variable to store the button ID that was clicked
+// use that variable 
 
 
+// 1. Press start button
+
+// 2. Run start game function
+
+// 3. First game text blurb appears
+
+// 4. Three character choice buttons appear
+    
+    // 5. Listen for a click and identify which button was clicked
+    // let playersChoice;
+    // button1.addEventListener('click', choice1 => {
+    //     console.log(`button 1 clicked`)
+    //     playersChoice = 1
+    //     return playersChoice;
+    // })
+    // button2.addEventListener('click', choice2 => {
+    //     console.log(`button 2 clicked`)
+    //     playersChoice = 2
+    //     return playersChoice;
+    // })
+    // button3.addEventListener('click', choice3 => {
+    //     console.log(`button 3 clicked`)
+    //     playersChoice = 3
+    //     return playersChoice;
+    // })
+
+// 6. Text blurb states 'you chose character [X]'
+
+// 7. Third text blurb appears: what weapon do you bring
+
+// 8. create an 'inventory' object
+    // const inventory = { } /* <-- empty at start of game */
+
+// 9. Three more buttons for diff weapons
+    // const weapons = ['pistol', 'bow and arrow', 'machete']
+    
+// 10. Listen for click and identify which weapon
+    // store in 'inventory'
+
+// 11. 4th text blurb: which supplies do you bring
+
+// 12. Three more buttons for supplies
+    // const supplies = ['flint stone', 'canvas tent', 'blankets']
+
+// 13. Listen for click and identify which supplies chosen
+    // store in 'inventory'
+
+// 14. present options for route to take
